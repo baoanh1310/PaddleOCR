@@ -1,0 +1,172 @@
+/home/aiotlab/.local/lib/python3.7/site-packages/paddle/fluid/layers/utils.py:26: DeprecationWarning: `np.int` is a deprecated alias for the builtin `int`. To silence this warning, use `int` by itself. Doing this will not modify any behavior and is safe. When replacing `np.int`, you may wish to use e.g. `np.int64` or `np.int32` to specify the precision. If you wish to review your current use, check the release note link for additional information.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  def convert_to_list(value, n, name, dtype=np.int):
+/mnt/disk1/anaconda3/envs/baoanh/lib/python3.7/site-packages/skimage/data/__init__.py:111: DeprecationWarning: 
+    Importing file_hash from pooch.utils is DEPRECATED. Please import from the
+    top-level namespace (`from pooch import file_hash`) instead, which is fully
+    backwards compatible with pooch >= 0.1.
+    
+  return file_hash(path) == expected_hash
+/mnt/disk1/anaconda3/envs/baoanh/lib/python3.7/site-packages/dask/config.py:168: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  data = yaml.load(f.read()) or {}
+[2022/05/16 04:57:11] ppocr INFO: Architecture : 
+[2022/05/16 04:57:11] ppocr INFO:     Backbone : 
+[2022/05/16 04:57:11] ppocr INFO:         layers : 50
+[2022/05/16 04:57:11] ppocr INFO:         name : ResNet
+[2022/05/16 04:57:11] ppocr INFO:     Head : 
+[2022/05/16 04:57:11] ppocr INFO:         k : 50
+[2022/05/16 04:57:11] ppocr INFO:         name : DBHead
+[2022/05/16 04:57:11] ppocr INFO:     Neck : 
+[2022/05/16 04:57:11] ppocr INFO:         name : DBFPN
+[2022/05/16 04:57:11] ppocr INFO:         out_channels : 256
+[2022/05/16 04:57:11] ppocr INFO:     Transform : None
+[2022/05/16 04:57:11] ppocr INFO:     algorithm : DB
+[2022/05/16 04:57:11] ppocr INFO:     model_type : det
+[2022/05/16 04:57:11] ppocr INFO: Eval : 
+[2022/05/16 04:57:11] ppocr INFO:     dataset : 
+[2022/05/16 04:57:11] ppocr INFO:         data_dir : ./train_data/icdar2015/text_localization/
+[2022/05/16 04:57:11] ppocr INFO:         label_file_list : ['./train_data/icdar2015/text_localization/test_icdar2015_label.txt']
+[2022/05/16 04:57:11] ppocr INFO:         name : SimpleDataSet
+[2022/05/16 04:57:11] ppocr INFO:         transforms : 
+[2022/05/16 04:57:11] ppocr INFO:             DecodeImage : 
+[2022/05/16 04:57:11] ppocr INFO:                 channel_first : False
+[2022/05/16 04:57:11] ppocr INFO:                 img_mode : BGR
+[2022/05/16 04:57:11] ppocr INFO:             DetLabelEncode : None
+[2022/05/16 04:57:11] ppocr INFO:             DetResizeForTest : 
+[2022/05/16 04:57:11] ppocr INFO:                 image_shape : [736, 1280]
+[2022/05/16 04:57:11] ppocr INFO:             NormalizeImage : 
+[2022/05/16 04:57:11] ppocr INFO:                 mean : [0.485, 0.456, 0.406]
+[2022/05/16 04:57:11] ppocr INFO:                 order : hwc
+[2022/05/16 04:57:11] ppocr INFO:                 scale : 1./255.
+[2022/05/16 04:57:11] ppocr INFO:                 std : [0.229, 0.224, 0.225]
+[2022/05/16 04:57:11] ppocr INFO:             ToCHWImage : None
+[2022/05/16 04:57:11] ppocr INFO:             KeepKeys : 
+[2022/05/16 04:57:11] ppocr INFO:                 keep_keys : ['image', 'shape', 'polys', 'ignore_tags']
+[2022/05/16 04:57:11] ppocr INFO:     loader : 
+[2022/05/16 04:57:11] ppocr INFO:         batch_size_per_card : 1
+[2022/05/16 04:57:11] ppocr INFO:         drop_last : False
+[2022/05/16 04:57:11] ppocr INFO:         num_workers : 8
+[2022/05/16 04:57:11] ppocr INFO:         shuffle : False
+[2022/05/16 04:57:11] ppocr INFO: Global : 
+[2022/05/16 04:57:11] ppocr INFO:     cal_metric_during_train : False
+[2022/05/16 04:57:11] ppocr INFO:     checkpoints : None
+[2022/05/16 04:57:11] ppocr INFO:     distributed : True
+[2022/05/16 04:57:11] ppocr INFO:     epoch_num : 1200
+[2022/05/16 04:57:11] ppocr INFO:     eval_batch_step : [0, 2000]
+[2022/05/16 04:57:11] ppocr INFO:     infer_img : doc/imgs_en/img_10.jpg
+[2022/05/16 04:57:11] ppocr INFO:     log_smooth_window : 20
+[2022/05/16 04:57:11] ppocr INFO:     pretrained_model : ./pretrain_models/ResNet50_vd_ssld_pretrained
+[2022/05/16 04:57:11] ppocr INFO:     print_batch_step : 10
+[2022/05/16 04:57:11] ppocr INFO:     save_epoch_step : 1200
+[2022/05/16 04:57:11] ppocr INFO:     save_inference_dir : None
+[2022/05/16 04:57:11] ppocr INFO:     save_model_dir : ./output/det_r50_vd/
+[2022/05/16 04:57:11] ppocr INFO:     save_res_path : ./output/det_db/predicts_db.txt
+[2022/05/16 04:57:11] ppocr INFO:     use_gpu : True
+[2022/05/16 04:57:11] ppocr INFO:     use_visualdl : False
+[2022/05/16 04:57:11] ppocr INFO: Loss : 
+[2022/05/16 04:57:11] ppocr INFO:     alpha : 5
+[2022/05/16 04:57:11] ppocr INFO:     balance_loss : True
+[2022/05/16 04:57:11] ppocr INFO:     beta : 10
+[2022/05/16 04:57:11] ppocr INFO:     main_loss_type : DiceLoss
+[2022/05/16 04:57:11] ppocr INFO:     name : DBLoss
+[2022/05/16 04:57:11] ppocr INFO:     ohem_ratio : 3
+[2022/05/16 04:57:11] ppocr INFO: Metric : 
+[2022/05/16 04:57:11] ppocr INFO:     main_indicator : hmean
+[2022/05/16 04:57:11] ppocr INFO:     name : DetMetric
+[2022/05/16 04:57:11] ppocr INFO: Optimizer : 
+[2022/05/16 04:57:11] ppocr INFO:     beta1 : 0.9
+[2022/05/16 04:57:11] ppocr INFO:     beta2 : 0.999
+[2022/05/16 04:57:11] ppocr INFO:     lr : 
+[2022/05/16 04:57:11] ppocr INFO:         learning_rate : 0.001
+[2022/05/16 04:57:11] ppocr INFO:     name : Adam
+[2022/05/16 04:57:11] ppocr INFO:     regularizer : 
+[2022/05/16 04:57:11] ppocr INFO:         factor : 0
+[2022/05/16 04:57:11] ppocr INFO:         name : L2
+[2022/05/16 04:57:11] ppocr INFO: PostProcess : 
+[2022/05/16 04:57:11] ppocr INFO:     box_thresh : 0.7
+[2022/05/16 04:57:11] ppocr INFO:     max_candidates : 1000
+[2022/05/16 04:57:11] ppocr INFO:     name : DBPostProcess
+[2022/05/16 04:57:11] ppocr INFO:     thresh : 0.3
+[2022/05/16 04:57:11] ppocr INFO:     unclip_ratio : 1.5
+[2022/05/16 04:57:11] ppocr INFO: Train : 
+[2022/05/16 04:57:11] ppocr INFO:     dataset : 
+[2022/05/16 04:57:11] ppocr INFO:         data_dir : ./train_data/icdar2015/text_localization/
+[2022/05/16 04:57:11] ppocr INFO:         label_file_list : ['./train_data/icdar2015/text_localization/train_icdar2015_label.txt']
+[2022/05/16 04:57:11] ppocr INFO:         name : SimpleDataSet
+[2022/05/16 04:57:11] ppocr INFO:         ratio_list : [1.0]
+[2022/05/16 04:57:11] ppocr INFO:         transforms : 
+[2022/05/16 04:57:11] ppocr INFO:             DecodeImage : 
+[2022/05/16 04:57:11] ppocr INFO:                 channel_first : False
+[2022/05/16 04:57:11] ppocr INFO:                 img_mode : BGR
+[2022/05/16 04:57:11] ppocr INFO:             DetLabelEncode : None
+[2022/05/16 04:57:11] ppocr INFO:             CopyPaste : None
+[2022/05/16 04:57:11] ppocr INFO:             IaaAugment : 
+[2022/05/16 04:57:11] ppocr INFO:                 augmenter_args : 
+[2022/05/16 04:57:11] ppocr INFO:                     args : 
+[2022/05/16 04:57:11] ppocr INFO:                         p : 0.5
+[2022/05/16 04:57:11] ppocr INFO:                     type : Fliplr
+[2022/05/16 04:57:11] ppocr INFO:                     args : 
+[2022/05/16 04:57:11] ppocr INFO:                         rotate : [-10, 10]
+[2022/05/16 04:57:11] ppocr INFO:                     type : Affine
+[2022/05/16 04:57:11] ppocr INFO:                     args : 
+[2022/05/16 04:57:11] ppocr INFO:                         size : [0.5, 3]
+[2022/05/16 04:57:11] ppocr INFO:                     type : Resize
+[2022/05/16 04:57:11] ppocr INFO:             EastRandomCropData : 
+[2022/05/16 04:57:11] ppocr INFO:                 keep_ratio : True
+[2022/05/16 04:57:11] ppocr INFO:                 max_tries : 50
+[2022/05/16 04:57:11] ppocr INFO:                 size : [640, 640]
+[2022/05/16 04:57:11] ppocr INFO:             MakeBorderMap : 
+[2022/05/16 04:57:11] ppocr INFO:                 shrink_ratio : 0.4
+[2022/05/16 04:57:11] ppocr INFO:                 thresh_max : 0.7
+[2022/05/16 04:57:11] ppocr INFO:                 thresh_min : 0.3
+[2022/05/16 04:57:11] ppocr INFO:             MakeShrinkMap : 
+[2022/05/16 04:57:11] ppocr INFO:                 min_text_size : 8
+[2022/05/16 04:57:11] ppocr INFO:                 shrink_ratio : 0.4
+[2022/05/16 04:57:11] ppocr INFO:             NormalizeImage : 
+[2022/05/16 04:57:11] ppocr INFO:                 mean : [0.485, 0.456, 0.406]
+[2022/05/16 04:57:11] ppocr INFO:                 order : hwc
+[2022/05/16 04:57:11] ppocr INFO:                 scale : 1./255.
+[2022/05/16 04:57:11] ppocr INFO:                 std : [0.229, 0.224, 0.225]
+[2022/05/16 04:57:11] ppocr INFO:             ToCHWImage : None
+[2022/05/16 04:57:11] ppocr INFO:             KeepKeys : 
+[2022/05/16 04:57:11] ppocr INFO:                 keep_keys : ['image', 'threshold_map', 'threshold_mask', 'shrink_map', 'shrink_mask']
+[2022/05/16 04:57:11] ppocr INFO:     loader : 
+[2022/05/16 04:57:11] ppocr INFO:         batch_size_per_card : 16
+[2022/05/16 04:57:11] ppocr INFO:         drop_last : False
+[2022/05/16 04:57:11] ppocr INFO:         num_workers : 4
+[2022/05/16 04:57:11] ppocr INFO:         shuffle : True
+[2022/05/16 04:57:11] ppocr INFO: profiler_options : None
+[2022/05/16 04:57:11] ppocr INFO: train with paddle 2.0.0-rc1 and device CUDAPlace(0)
+W0516 04:57:11.892212 32567 dynamic_loader.cc:207] You may need to install 'nccl2' from NVIDIA official website: https://developer.nvidia.com/nccl/nccl-downloadbefore install PaddlePaddle.
+Traceback (most recent call last):
+  File "tools/train.py", line 188, in <module>
+    main(config, device, logger, vdl_writer)
+  File "tools/train.py", line 46, in main
+    dist.init_parallel_env()
+  File "/home/aiotlab/.local/lib/python3.7/site-packages/paddle/distributed/parallel.py", line 181, in init_parallel_env
+    parallel_helper._init_parallel_ctx()
+  File "/home/aiotlab/.local/lib/python3.7/site-packages/paddle/fluid/dygraph/parallel_helper.py", line 42, in _init_parallel_ctx
+    __parallel_ctx__clz__.init()
+RuntimeError: (PreconditionNotMet) The third-party dynamic library (libnccl.so) that Paddle depends on is not configured correctly. (error code is libnccl.so: cannot open shared object file: No such file or directory)
+  Suggestions:
+  1. Check if the third-party dynamic library (e.g. CUDA, CUDNN) is installed correctly and its version is matched with paddlepaddle you installed.
+  2. Configure third-party dynamic library environment variables as follows:
+  - Linux: set LD_LIBRARY_PATH by `export LD_LIBRARY_PATH=...`
+  - Windows: set PATH by `set PATH=XXX; (at /paddle/paddle/fluid/platform/dynload/dynamic_loader.cc:234)
+  [Hint: If you need C++ stacktraces for debugging, please set `FLAGS_call_stack_level=2`.]
+
+
+
+--------------------------------------
+C++ Traceback (most recent call last):
+--------------------------------------
+0   paddle::framework::SignalHandle(char const*, int)
+1   paddle::platform::GetCurrentTraceBackString[abi:cxx11]()
+
+----------------------
+Error Message Summary:
+----------------------
+FatalError: `Termination signal` is detected by the operating system.
+  [TimeInfo: *** Aborted at 1652651831 (unix time) try "date -d @1652651831" if you are using GNU date ***]
+  [SignalInfo: *** SIGTERM (@0x3e800007f37) received by PID 32724 (TID 0x7ff868f5d740) from PID 32567 ***]
+

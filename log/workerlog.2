@@ -1,0 +1,29 @@
+/home/aiotlab/.local/lib/python3.7/site-packages/paddle/fluid/layers/utils.py:26: DeprecationWarning: `np.int` is a deprecated alias for the builtin `int`. To silence this warning, use `int` by itself. Doing this will not modify any behavior and is safe. When replacing `np.int`, you may wish to use e.g. `np.int64` or `np.int32` to specify the precision. If you wish to review your current use, check the release note link for additional information.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  def convert_to_list(value, n, name, dtype=np.int):
+/mnt/disk1/anaconda3/envs/baoanh/lib/python3.7/site-packages/skimage/data/__init__.py:111: DeprecationWarning: 
+    Importing file_hash from pooch.utils is DEPRECATED. Please import from the
+    top-level namespace (`from pooch import file_hash`) instead, which is fully
+    backwards compatible with pooch >= 0.1.
+    
+  return file_hash(path) == expected_hash
+/mnt/disk1/anaconda3/envs/baoanh/lib/python3.7/site-packages/dask/config.py:168: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  data = yaml.load(f.read()) or {}
+
+
+--------------------------------------
+C++ Traceback (most recent call last):
+--------------------------------------
+0   paddle::imperative::NCCLParallelContext::Init()
+1   paddle::imperative::NCCLParallelContext::BcastNCCLId(ncclUniqueId*, int)
+2   paddle::imperative::NCCLParallelContext::RecvNCCLID(std::string const&, ncclUniqueId*)
+3   paddle::framework::SignalHandle(char const*, int)
+4   paddle::platform::GetCurrentTraceBackString[abi:cxx11]()
+
+----------------------
+Error Message Summary:
+----------------------
+FatalError: `Termination signal` is detected by the operating system.
+  [TimeInfo: *** Aborted at 1652651832 (unix time) try "date -d @1652651832" if you are using GNU date ***]
+  [SignalInfo: *** SIGTERM (@0x3e800007f14) received by PID 32577 (TID 0x7fd233dee740) from PID 32532 ***]
+
